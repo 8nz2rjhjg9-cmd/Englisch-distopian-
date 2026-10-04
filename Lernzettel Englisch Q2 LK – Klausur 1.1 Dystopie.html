@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lernzettel Englisch Q2 LK – Klausur 1.1 Dystopie</title>
+<style>
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  --bg: #F2F4F9;
+  --surface: #FFFFFF;
+  --ink: #14213D;
+  --muted: #55607A;
+  --accent: #2B3FD6;
+  --accent-soft: #E6E9FB;
+  --hl: #FFE45C;
+  --line: #D3D9E7;
+  --warn: #B4302A;
+  --warn-soft: #FBE9E7;
+  --ok: #1D7A4D;
+  --ok-soft: #E3F4EA;
+  --sans: "Avenir Next", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --serif: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1325; --surface: #161C33; --ink: #E8EBF6; --muted: #9FA9C7;
+    --accent: #93A0FF; --accent-soft: #232B52; --hl: rgba(255,228,92,.28);
+    --line: #2A3358; --warn: #FF8F86; --warn-soft: #3A1E24; --ok: #6FD3A0; --ok-soft: #14301F;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1325; --surface: #161C33; --ink: #E8EBF6; --muted: #9FA9C7;
+  --accent: #93A0FF; --accent-soft: #232B52; --hl: rgba(255,228,92,.28);
+  --line: #2A3358; --warn: #FF8F86; --warn-soft: #3A1E24; --ok: #6FD3A0; --ok-soft: #14301F;
+}
+html { height: auto; scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 64px); scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--serif); font-size: 17px; line-height: 1.62; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px 80px; }
+
+/* nav */
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
+nav ul { list-style: none; margin: 0 auto; padding: 10px 20px; max-width: 960px; display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+nav a { white-space: nowrap; font: 600 14px var(--sans); color: var(--ink); text-decoration: none; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+
+/* hero */
+header.hero { padding: 40px 0 28px; }
+header.hero h1 { font: 800 clamp(30px, 6vw, 48px)/1.08 var(--sans); letter-spacing: -0.02em; margin: 0 0 10px; }
+header.hero p.sub { font: 500 17px var(--sans); color: var(--muted); margin: 0 0 24px; max-width: 62ch; }
+.timebar { display: flex; width: 100%; height: 64px; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+.timebar a { display: flex; flex-direction: column; justify-content: center; padding: 0 10px; text-decoration: none; color: var(--ink); font: 600 13px/1.25 var(--sans); border-right: 1px solid var(--line); min-width: 0; }
+.timebar a:last-child { border-right: 0; }
+.timebar a span { font-weight: 400; color: var(--muted); font-size: 12px; }
+.timebar a:nth-child(1) { background: var(--accent-soft); }
+.timebar a:nth-child(2) { background: var(--surface); }
+.timebar a:nth-child(3) { background: var(--accent-soft); }
+.timebar a:nth-child(4) { background: var(--surface); }
+.timebar a:nth-child(5) { background: var(--hl); color: #14213D; }
+.timebar a:nth-child(5) span { color: #3b3a1f; }
+.timecap { font: 13px var(--sans); color: var(--muted); margin: 8px 0 0; }
+
+/* sections */
+section { margin-top: 44px; }
+section > h2 { font: 800 clamp(24px, 4vw, 32px)/1.15 var(--sans); letter-spacing: -0.015em; margin: 0 0 6px; padding-top: 18px; border-top: 3px solid var(--ink); }
+section > p.lead { font: 500 16px var(--sans); color: var(--muted); margin: 0 0 18px; }
+h3 { font: 700 20px/1.25 var(--sans); margin: 28px 0 8px; }
+h4 { font: 700 16px var(--sans); margin: 18px 0 6px; color: var(--accent); }
+p { margin: 0 0 12px; }
+ul, ol { margin: 0 0 14px; padding-left: 22px; }
+li { margin: 3px 0; }
+mark { background: linear-gradient(transparent 38%, var(--hl) 38%, var(--hl) 92%, transparent 92%); color: inherit; padding: 0 2px; }
+em.en, .en { font-style: italic; }
+
+/* components */
+.box { background: var(--surface); border: 1px solid var(--line); border-left: 5px solid var(--accent); border-radius: 6px; padding: 14px 18px; margin: 16px 0; }
+.box.warn { border-left-color: var(--warn); background: var(--warn-soft); }
+.box.ok { border-left-color: var(--ok); background: var(--ok-soft); }
+.box > :last-child { margin-bottom: 0; }
+.box .t { font: 700 15px var(--sans); margin: 0 0 6px; }
+.say { font-style: italic; border-left: 3px solid var(--hl); padding: 2px 0 2px 12px; margin: 8px 0; }
+.say.block { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--hl); padding: 12px 16px; border-radius: 4px; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+.cols > div { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 16px; }
+.cols > div > h4:first-child { margin-top: 0; }
+.tw { overflow-x: auto; margin: 12px 0 18px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font: 14.5px/1.45 var(--sans); min-width: 520px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+th { background: var(--accent-soft); font-weight: 700; }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; padding: 0; list-style: none; }
+.chips li { font: 14px var(--sans); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px 11px; margin: 0; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; margin: 8px 0; padding: 10px 16px; }
+details summary { cursor: pointer; font: 600 15px var(--sans); }
+details[open] summary { margin-bottom: 8px; }
+details p:last-child { margin-bottom: 0; }
+a { color: var(--accent); }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+footer { margin-top: 56px; font: 13px var(--sans); color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .timebar { height: auto; flex-direction: column; }
+  .timebar a { flex: none !important; padding: 9px 12px; border-right: 0; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  :root { --bg: #fff; }
+  nav, .timebar a:hover { display: none; }
+  body { font-size: 11.5pt; background: #fff; }
+  .wrap { max-width: none; padding: 0; }
+  section { break-inside: auto; }
+  h2, h3, h4 { break-after: avoid; }
+  .box, .tw, table, details { break-inside: avoid; }
+  mark { background: #FFE45C; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<nav aria-label="Inhalt">
+  <ul>
+    <li><a href="#ueberblick">Überblick</a></li>
+    <li><a href="#mediation">Mediation</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#analysis">Analysis</a></li>
+    <li><a href="#genre">Dystopie-Merkmale</a></li>
+    <li><a href="#unterricht">Unterrichtswissen</a></li>
+    <li><a href="#wahl">Wahlaufgabe</a></li>
+    <li><a href="#vocab">Vokabeln</a></li>
+    <li><a href="#check">Checkliste &amp; Plan</a></li>
+    <li><a href="#test">Selbsttest</a></li>
+  </ul>
+</nav>
+
+<div class="wrap">
+<header class="hero">
+  <h1>Englisch Q2 LK – Klausur 1.1<br>Dystopie &amp; „The world of tomorrow“</h1>
+  <p class="sub">Klausur am 6.10.2026, 225 Minuten. Dieser Lernzettel ist nach den Aufgaben der Klausur geordnet, dazu kommt das Wissen aus deinem Unterrichtsordner. Zeitplan unten ist ein Vorschlag, kein offizieller Wert.</p>
+  <div class="timebar" role="list">
+    <a href="#mediation" role="listitem" style="flex: 40">Mediation<span>ca. 40 min</span></a>
+    <a href="#summary" role="listitem" style="flex: 30">Summary<span>ca. 30 min</span></a>
+    <a href="#analysis" role="listitem" style="flex: 65">Analysis<span>ca. 65 min</span></a>
+    <a href="#wahl" role="listitem" style="flex: 60">Wahlaufgabe<span>ca. 60 min</span></a>
+    <a href="#check" role="listitem" style="flex: 30">Puffer<span>ca. 30 min</span></a>
+  </div>
+  <p class="timecap">Zusammen 225 min. Plane den Puffer fürs Korrigieren fest ein, nicht als „Reserve“, die du vorher aufbrauchst.</p>
+</header>
+
+<!-- ============ ÜBERBLICK ============ -->
+<section id="ueberblick">
+  <h2>Überblick: Was dich erwartet</h2>
+  <p class="lead">Aufbau laut deinem Screenshot.</p>
+  <div class="tw"><table>
+    <tr><th>Teil</th><th>Aufgabe</th><th>Worauf es ankommt</th></tr>
+    <tr><td>1. Mediation / Sprachmittlung</td><td>Informationen aus einem Text für einen Adressaten in der anderen Sprache wiedergeben</td><td>Adressat, Textsorte, nur relevante Infos, eigene Worte</td></tr>
+    <tr><td>2. Lesen, Schreiben integriert</td><td>Unbekannter fiktionaler Text: Ausschnitt aus einem dystopischen Roman</td><td>Textverständnis plus drei Schreibaufgaben</td></tr>
+    <tr><td>2.1 Summary</td><td>Zusammenfassung im Hinblick auf einen <mark>Teilaspekt</mark>, der vom Analyseschwerpunkt abweicht</td><td>Nur diesen Aspekt, neutral, Präsens, eigene Worte</td></tr>
+    <tr><td>2.2 Analysis</td><td>Erzähltechniken zur <mark>Charakterisierung</mark> und zur Schaffung von <mark>Atmosphäre</mark>, vor dem Hintergrund <mark>genretypischer Merkmale</mark></td><td>Technik, Textbeleg, Wirkung, Genrebezug</td></tr>
+    <tr><td>2.3 Wahlaufgabe</td><td>a) Blog entry zu einem kontroversen Themenimpuls <b>oder</b> b) kreative Fortführung des Ausschnitts</td><td>Eine Aufgabe wählen, Textsorte und Stil treffen</td></tr>
+  </table></div>
+
+  <h3>Operatoren (Aufgabenverben)</h3>
+  <div class="tw"><table>
+    <tr><th>Operator</th><th>Du sollst …</th></tr>
+    <tr><td>summarise</td><td>die wichtigsten Inhalte knapp, sachlich und in eigenen Worten wiedergeben</td></tr>
+    <tr><td>analyse</td><td>Gestaltungsmittel erkennen, belegen und ihre Wirkung erklären</td></tr>
+    <tr><td>characterise</td><td>Figur beschreiben: Eigenschaften, Haltung, Situation, jeweils mit Beleg</td></tr>
+    <tr><td>explain</td><td>Zusammenhänge und Gründe darlegen</td></tr>
+    <tr><td>comment / evaluate</td><td>begründet Stellung nehmen, eigenes Urteil mit Argumenten</td></tr>
+    <tr><td>discuss</td><td>Pro und Contra abwägen, dann zu einem Ergebnis kommen</td></tr>
+    <tr><td>describe</td><td>sachlich darstellen, ohne zu bewerten</td></tr>
+  </table></div>
+</section>
+
+<!-- ============ MEDIATION ============ -->
+<section id="mediation">
+  <h2>1 · Mediation</h2>
+  <p class="lead">Du bist Vermittler, kein Übersetzer. Dein Leser kennt den Text nicht und will nur das, was für ihn nützlich ist.</p>
+
+  <h3>Vorgehen in fünf Schritten</h3>
+  <ol>
+    <li><b>Aufgabenstellung genau lesen:</b> Wer bist du? Wer ist der Adressat? Welche Textsorte (E-Mail, Brief, Beitrag, Zusammenfassung)? Welche Infos sollen rein? Wird eine eigene Meinung verlangt?</li>
+    <li><b>Ausgangstext lesen und markieren:</b> nur Informationen, die zum Auftrag passen. Alles andere weglassen.</li>
+    <li><b>Ordnen:</b> 3–5 Kernpunkte in sinnvoller Reihenfolge, nicht in der Reihenfolge des Ausgangstextes, falls eine andere logischer ist.</li>
+    <li><b>Frei formulieren:</b> keine Satz-für-Satz-Übersetzung. Umschreiben, wenn dir ein Wort fehlt (<span class="en">“a device that listens to you at home”</span>).</li>
+    <li><b>Kultur und Fachbegriffe erklären</b>, wenn der Adressat sie nicht kennt (z. B. deutsche Institutionen, Gesetze, Abkürzungen).</li>
+  </ol>
+
+  <div class="box ok"><p class="t">Das bewertet man typischerweise gut</p>
+    <ul>
+      <li>Alle geforderten Informationen sind enthalten, nichts Erfundenes.</li>
+      <li>Text passt zu Adressat und Situation (Anrede, Register, Schluss).</li>
+      <li>Eigene Formulierungen statt Übersetzung, klare Struktur.</li>
+      <li>Meinung nur dort, wo sie verlangt ist, und dann begründet.</li>
+    </ul>
+  </div>
+
+  <h3>Beispiel aus dem Unterricht</h3>
+  <p>Du bist Schüler/in in Deutschland, hast einen Zeitungsartikel über Überwachung gelesen (Datensammlung, Kameras, Algorithmen, Mikrofone, Smart Devices wie Alexa) und schreibst eine <b>E-Mail an Sam in den USA</b>. Du gibst die Infos weiter und sagst deine Meinung.</p>
+  <div class="cols">
+    <div><h4>E-Mail-Rahmen</h4>
+      <p class="say">Subject: Something I read about surveillance</p>
+      <p class="say">Hi Sam, / Dear Sam,</p>
+      <p class="say">I hope you’re doing well! I wanted to tell you about an article I recently read …</p>
+      <p class="say">Let me know what you think. / Write back soon! / Best wishes, [Name]</p>
+    </div>
+    <div><h4>Infos weitergeben</h4>
+      <p class="say">According to the article, …</p>
+      <p class="say">The author points out that …</p>
+      <p class="say">What I found most interesting is that …</p>
+      <p class="say">In Germany, … (kurze Erklärung für den US-Freund)</p>
+    </div>
+    <div><h4>Eigene Meinung</h4>
+      <p class="say">Personally, I think …</p>
+      <p class="say">In my opinion, … because …</p>
+      <p class="say">On the one hand … on the other hand …</p>
+      <p class="say">How is this discussed in the US?</p>
+    </div>
+  </div>
+  <div class="box warn"><p class="t">Häufige Fehler</p>
+    <ul>
+      <li>Wörtlich übersetzen oder Absätze nacherzählen.</li>
+      <li>Meinung in den Infoteil mischen, obwohl sie getrennt gefordert ist.</li>
+      <li>Formelle Anrede in der Mail an einen Freund (oder umgekehrt).</li>
+      <li>Die Sprachrichtung vergessen: Ausgangs- und Zielsprache laut Aufgabe prüfen.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SUMMARY ============ -->
+<section id="summary">
+  <h2>2.1 · Summary</h2>
+  <p class="lead">Kurz, neutral, nur der geforderte Teilaspekt. Das ist keine Analyse.</p>
+
+  <div class="cols">
+    <div><h4>Regeln</h4>
+      <ul>
+        <li><b>Simple present</b> (frühere Ereignisse: past oder present perfect)</li>
+        <li><b>Dritte Person</b>, kein „I“, keine Wertung</li>
+        <li><b>Eigene Worte</b>, keine Zitate, keine wörtliche Rede (→ reported speech)</li>
+        <li>Nur Wesentliches, keine Details und Beispiele</li>
+        <li><b>Teilaspekt beachten:</b> alles weglassen, was nicht dazu gehört (z. B. nur „living conditions of the protagonist“ oder „rules of the society“)</li>
+        <li>Länge nach Vorgabe der Aufgabe</li>
+      </ul>
+    </div>
+    <div><h4>Aufbau</h4>
+      <ol>
+        <li><b>Einleitungssatz:</b> Textsorte, Thema, Ort/Zeit, Hauptfigur</li>
+        <li><b>Hauptteil:</b> Ereignisse oder Informationen zum Teilaspekt in logischer Reihenfolge, mit Verbindungswörtern</li>
+        <li><b>Schluss:</b> Situation am Ende des Ausschnitts (kein Urteil)</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>Einleitung</h3>
+  <p class="say block">The excerpt from the dystopian novel “[title]” by [author] is set in [place/time] and focuses on [protagonist], who [situation]. The summary concentrates on [Teilaspekt].</p>
+  <p>Ist der Titel unbekannt, schreibst du: <span class="en">“The text is an excerpt from a dystopian novel.”</span> Erfinde nichts.</p>
+
+  <h3>Nützliche Bausteine</h3>
+  <ul class="chips">
+    <li>first / at first</li><li>then / after that</li><li>meanwhile</li><li>as a result</li><li>therefore</li><li>however</li><li>eventually / finally</li>
+    <li>realises that</li><li>decides to</li><li>is forced to</li><li>describes how</li><li>explains that</li><li>struggles with</li><li>is subjected to</li>
+  </ul>
+  <p class="say">Direkte Rede → <i>“He says that he is afraid of being watched.”</i> statt <i>“I am afraid!”, he says.</i></p>
+</section>
+
+<!-- ============ ANALYSIS ============ -->
+<section id="analysis">
+  <h2>2.2 · Analysis</h2>
+  <p class="lead">Hier gibt es die meisten Punkte. Merke dir: Technik nennen reicht nicht, die <mark>Wirkung</mark> macht die Analyse.</p>
+
+  <h3>Aufbau</h3>
+  <div class="tw"><table>
+    <tr><th>Teil</th><th>Inhalt</th></tr>
+    <tr><td>Einleitung</td><td>Text kurz vorstellen, Thema, <mark>These</mark>: Der Autor charakterisiert … vor allem durch … und schafft eine … Atmosphäre, die typisch für das Genre Dystopie ist.</td></tr>
+    <tr><td>Hauptteil A</td><td>Charakterisierung: Erzählperspektive, direkte und indirekte Charakterisierung, jeweils mit Beleg und Wirkung</td></tr>
+    <tr><td>Hauptteil B</td><td>Atmosphäre: Setting, Bildsprache, Wortwahl, Satzbau, Kontraste, jeweils mit Beleg und Wirkung</td></tr>
+    <tr><td>Genrebezug</td><td>In A und B immer wieder verknüpfen: Welches Dystopie-Merkmal zeigt sich hier? (Liste im nächsten Abschnitt)</td></tr>
+    <tr><td>Schluss</td><td>Gesamtwirkung auf den Leser, Botschaft oder Warnfunktion der Dystopie</td></tr>
+  </table></div>
+
+  <div class="box"><p class="t">PEEL-Absatz</p>
+    <p><b>P</b>oint: Behauptung · <b>E</b>vidence: kurzer Beleg mit Zeilenangabe (ll. 3–4) · <b>E</b>xplanation: was die Technik bedeutet · <b>L</b>ink/Effect: Wirkung auf den Leser und Bezug zum Genre.</p>
+  </div>
+
+  <h3>Charakterisierung</h3>
+  <div class="cols">
+    <div><h4>Direkt</h4><p>Erzähler oder andere Figuren nennen Eigenschaften ausdrücklich.</p>
+      <p class="say">“The narrator explicitly describes him as …”</p></div>
+    <div><h4>Indirekt</h4>
+      <ul><li>Handlungen und Verhalten</li><li>Sprechweise und Dialoge</li><li>Gedanken und Gefühle</li><li>Aussehen, Körperhaltung</li><li>Reaktionen anderer</li><li>Umgebung (spiegelt oft die Lage der Figur)</li></ul></div>
+  </div>
+
+  <h4>Erzählperspektive</h4>
+  <div class="tw"><table>
+    <tr><th>Perspektive</th><th>Merkmale</th><th>Wirkung</th></tr>
+    <tr><td>First-person narrator</td><td>„I“, subjektiv, begrenztes Wissen</td><td>Nähe, Identifikation, Spannung, evtl. unzuverlässig</td></tr>
+    <tr><td>Third-person limited (personal)</td><td>„he/she“, Blick in die Gedanken einer Figur</td><td>Nähe bei gleichzeitigem Abstand, Leser erlebt die Welt durch die Figur</td></tr>
+    <tr><td>Omniscient / authorial narrator</td><td>Erzähler weiß mehr als die Figuren, kommentiert</td><td>Überblick, Distanz, oft Ironie oder Kritik</td></tr>
+    <tr><td>Interior monologue / free indirect speech</td><td>Gedanken ohne „he thought“</td><td>Unmittelbarer Einblick in Angst und Zweifel</td></tr>
+  </table></div>
+
+  <h3>Atmosphäre und Erzähltechniken</h3>
+  <div class="tw"><table>
+    <tr><th>Technik</th><th>Worauf du achtest</th><th>Mögliche Wirkung</th></tr>
+    <tr><td>Setting</td><td>Ort, Zeit, Wetter, Licht (kalt, grau, dunkel, verfallen)</td><td>bedrückend, trostlos, bedrohlich</td></tr>
+    <tr><td>Imagery (Bildsprache)</td><td>visual, auditory, smell, emotional, symbolic imagery</td><td>Leser „sieht, hört, riecht“ die Welt, fühlt Angst oder Hoffnungslosigkeit</td></tr>
+    <tr><td>Simile / metaphor / personification</td><td>Vergleiche, Bilder, belebte Dinge (z. B. der „beobachtende“ Poster)</td><td>macht Abstraktes (Kontrolle) greifbar</td></tr>
+    <tr><td>Word choice / lexical field</td><td>Wörter aus einem Feld: Kälte, Verfall, Angst, Kontrolle</td><td>verdichtet die Stimmung</td></tr>
+    <tr><td>Sentence structure</td><td>kurze Sätze, Aufzählungen, Wiederholung, Parataxe</td><td>kurz = Spannung, Härte; Reihung = Monotonie, Druck</td></tr>
+    <tr><td>Contrast / juxtaposition</td><td>Normales neben Unheimlichem, hell neben kalt</td><td>Irritation, das „Falsche“ im Gewöhnlichen</td></tr>
+    <tr><td>Symbolism</td><td>Dinge, die für mehr stehen (Bildschirme, Augen, Wände)</td><td>Gesellschaftskritik, tiefere Bedeutung</td></tr>
+    <tr><td>Irony</td><td>Gegensatz zwischen Gesagtem und Gemeintem (z. B. Ministerium der Wahrheit lügt)</td><td>entlarvt Absurdität des Systems</td></tr>
+    <tr><td>Foreshadowing</td><td>Andeutungen kommender Ereignisse</td><td>Spannung, Gefühl von Unheil</td></tr>
+    <tr><td>Dialogue</td><td>Wer spricht wie? Was bleibt ungesagt?</td><td>zeigt Ideologie, Machtverhältnisse, Furcht</td></tr>
+    <tr><td>Pace / structure</td><td>Zeitraffung, Detailtempo, Perspektivwechsel</td><td>Steuerung von Spannung</td></tr>
+  </table></div>
+
+  <h3>Formulierungshilfen für die Wirkung</h3>
+  <ul class="chips">
+    <li>creates a sense of …</li><li>evokes feelings of fear / unease</li><li>underlines / emphasises …</li><li>reinforces the impression that …</li>
+    <li>draws the reader into …</li><li>invites the reader to identify with …</li><li>foreshadows …</li><li>contributes to the oppressive atmosphere</li>
+    <li>suggests that …</li><li>implies that …</li><li>reveals his / her …</li><li>stands in contrast to …</li>
+  </ul>
+
+  <div class="box"><p class="t">Muster-Absatz (Beispiel 1984, Kapitel 1)</p>
+    <p class="say">The opening sentence combines a pleasant detail with an unsettling one: it is a “bright, cold day”, but the clocks strike thirteen. This contrast (<b>point</b>) immediately signals that the world of the novel is not normal (<b>explanation</b>). It irritates the reader and creates an atmosphere of unease, which is typical of dystopian fiction, where everyday life is distorted by an oppressive system (<b>effect / genre link</b>).</p>
+  </div>
+  <div class="box warn"><p class="t">Typische Fehler</p>
+    <ul>
+      <li>Feature-Spotting: Techniken aufzählen, ohne Wirkung zu erklären.</li>
+      <li>Inhalt nacherzählen statt analysieren.</li>
+      <li>Zitate ohne Zeilenangabe oder zu lang (kurz halten, ins eigene Satzgefüge einbauen).</li>
+      <li>Den Genrebezug vergessen, obwohl er in der Aufgabe steht.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ GENRE ============ -->
+<section id="genre">
+  <h2>Genretypische Merkmale der Dystopie</h2>
+  <p class="lead">Deine Checkliste für „vor dem Hintergrund genretypischer Merkmale“. Frage beim Lesen: Welche davon erkenne ich im Ausschnitt?</p>
+
+  <div class="box"><p class="t">Definition</p>
+    <p>Eine Dystopie ist eine erdachte Gesellschaft, die unerwünscht oder beängstigend ist. Oft wird sie als vermeintliche Utopie präsentiert, unter der Oberfläche liegen Unterdrückung, Leid und Verlust der Individualität. Dystopien zeigen die Gefahren, wenn man Perfektion um jeden Preis verfolgt.</p>
+  </div>
+
+  <div class="cols">
+    <div><h4>Gesellschaft und Macht</h4>
+      <ul><li>totalitärer Staat, Diktatur oder allmächtiger Konzern</li><li>Überwachung (cameras, telescreens, data)</li><li>Propaganda, Zensur, manipulierte Sprache und Information</li><li>Verlust von Freiheit, Privatsphäre und Individualität</li><li>Zwang zur Anpassung (conformity), Angst</li><li>soziale Ungleichheit (Staat gegen Volk, Klassen)</li></ul></div>
+    <div><h4>Welt und Setting</h4>
+      <ul><li>düstere, kalte, verfallene oder total urbanisierte Umgebung</li><li>zerstörte Natur, Klimakatastrophe, Ressourcenknappheit</li><li>Überbevölkerung</li><li>Technik als Kontrollmittel (AI, Roboter, Bildschirme)</li></ul></div>
+    <div><h4>Figuren und Handlung</h4>
+      <ul><li>Protagonist zweifelt, rebelliert, beobachtet kritisch</li><li>Gefahr für den, der abweicht (Thought Police, Strafen)</li><li>Atmosphäre: bedrückend, hoffnungslos, bedrohlich</li><li>häufig offenes oder düsteres Ende</li></ul></div>
+    <div><h4>Funktion des Genres</h4>
+      <ul><li><b>Warnung:</b> aktuelle Entwicklungen werden weitergedacht</li><li>entsteht aus <mark>gesellschaftlicher Angst</mark></li><li>Vorbilder in der Geschichte: Kommunismus in der UdSSR, Ausbeutung in der Industrialisierung, Weltkriege und Kalter Krieg</li><li>heutige Einflüsse: AI, Klimakrise, Weltkrieg, moderne Kriegsführung, Social Media</li></ul></div>
+  </div>
+
+  <h3>Utopie gegen Dystopie</h3>
+  <p><b>Utopia</b> kommt aus dem Griechischen (<i>ou topos</i>, „Nicht-Ort“) und wurde von Thomas More (1516) geprägt: eine erdachte perfekte Welt, ein ideal organisierter Staat. Utopisch kann auch „unrealistisch idealistisch“ bedeuten.</p>
+  <div class="tw"><table>
+    <tr><th>Utopia</th><th>Dystopia</th></tr>
+    <tr><td>Frieden, keine Kriege</td><td>Dauerkrieg</td></tr>
+    <tr><td>Kein Verbrechen, Gerechtigkeit</td><td>Keine Gesetze oder Gerechtigkeit, Unrecht</td></tr>
+    <tr><td>Harmonie mit der Natur</td><td>Zerstörte Natur</td></tr>
+    <tr><td>Soziale Gleichheit</td><td>Segregation, Ungleichheit</td></tr>
+    <tr><td>Wohlstand und Gesundheit für alle</td><td>Unheilbare Krankheiten, niedrige Lebenserwartung</td></tr>
+    <tr><td>Genug Essen, billige Energie</td><td>Hunger, unbezahlbarer Treibstoff</td></tr>
+    <tr><td>Keine Arbeit nötig</td><td>Sklaverei</td></tr>
+  </table></div>
+
+  <h3>Speculative fiction: das Raster</h3>
+  <p>Dein Arbeitsblatt hatte die Spalten Utopia, Dystopia, Science fiction, Fantasy (Zeilen: Definition, Focus, Examples). Der Lehrbuchtext liefert diese Inhalte:</p>
+  <div class="tw"><table>
+    <tr><th></th><th>Utopia</th><th>Dystopia</th><th>Science fiction</th><th>Fantasy</th></tr>
+    <tr><td>Definition</td><td>ideale Gesellschaft, perfekt organisiert</td><td>düstere Gesellschaft, oft mit Fassade der Perfektion</td><td>Geschichten über Zukunft, Technik und ihre Folgen mit wissenschaftlicher Grundlage</td><td>Magie und Übernatürliches in einer in sich stimmigen Welt, oft Gut gegen Böse</td></tr>
+    <tr><td>Focus</td><td>Verbesserung der Gesellschaft</td><td>Kritik an negativen Tendenzen der Gegenwart</td><td>Technik, Wissenschaft, Zukunftsgesellschaften</td><td>Magie, Abenteuer, Welten außerhalb unserer</td></tr>
+    <tr><td>Examples</td><td>More: <i>Utopia</i></td><td><i>Nineteen Eighty-Four</i>, <i>Brave New World</i>, <i>The Handmaid’s Tale</i>, <i>The Hunger Games</i></td><td>H. G. Wells: <i>The Time Machine</i>, Clarke: <i>2001</i>, Asimov (Roboter)</td><td>Tolkien: <i>Lord of the Rings</i>, <i>Harry Potter</i>, <i>Game of Thrones</i></td></tr>
+  </table></div>
+  <p style="font: 13px var(--sans); color: var(--muted)">Die Beispiele stammen aus deinem Lehrbuchauszug, soweit auf dem Scan lesbar. Prüfe sie gegen dein eigenes Blatt.</p>
+</section>
+
+<!-- ============ UNTERRICHT ============ -->
+<section id="unterricht">
+  <h2>Wissen aus dem Unterricht</h2>
+  <p class="lead">Das brauchst du für Inhalte, Beispiele und Argumente, besonders in der Wahlaufgabe.</p>
+
+  <h3>1984 (George Orwell, 1949)</h3>
+  <div class="cols">
+    <div><h4>Kontext</h4>
+      <ul><li>Entstanden 1949, spielt in einer Zukunft („1984“)</li><li>Kalter Krieg (Kommunismus gegen Kapitalismus, Atomkriegsangst)</li><li>Die 1980er: Reagan, Gorbatschow und Perestroika, Tschernobyl 1986, Zerfall der Sowjetunion</li></ul></div>
+    <div><h4>Kapitel 1 – wichtige Elemente</h4>
+      <ul><li>Winston Smith, 39, schwach, kleiner Mann im blauen Parteioverall</li><li>Victory Mansions: Staub, kaputter Aufzug, Strom tagsüber aus (Hate Week)</li><li>Plakat „Big Brother is watching you“, Augen folgen einem</li><li>Telescreen, nicht abstellbar; Thought Police</li><li>Ministries (Truth, Peace, Love, Plenty); Slogans WAR IS PEACE, FREEDOM IS SLAVERY, IGNORANCE IS STRENGTH; Newspeak</li><li>Tagebuch ist illegal (Thoughtcrime); Two Minutes Hate, Goldstein</li></ul></div>
+  </div>
+  <p><b>Zentrale Erkenntnisse aus dem Unterricht:</b> ständige Überwachung (Plakat mit Schnurrbart und Auge), Verlust der Privatsphäre, unterschwellige Präsenz des Kommunismus. Die vier Medien (Text, Filmstill von 1984, Manga, Graphic Novel von Fido Nesti 2021) erzeugen die Atmosphäre mit Kamera, Bildkomposition, Farbe und Panelaufbau unterschiedlich.</p>
+  <div class="box"><p class="t">Benjamin Franklin: „He who would trade liberty for some temporary security deserves neither liberty nor security.“</p>
+    <p>Botschaft: Freiheit hat Vorrang vor Sicherheit. Wer Freiheit für kurzfristige Sicherheit aufgibt, verliert beides. Nutze das als Argument zu Überwachung (CCTV, Flock-Kameras, Smart Devices).</p></div>
+
+  <h3>Echo Boy, Blade Runner 2048, Kurzweil</h3>
+  <div class="cols">
+    <div><h4>Echo Boy (Textauszug)</h4>
+      <p>Erste Annahmen zum Titel: lauter Mensch in leiser Gesellschaft, echter Junge wird durch Roboter ersetzt, Cyborg. Aufgabe war: Erzählperspektive und weitere Erzähltechniken mit ihrer Wirkung analysieren. Übe genau das an einem beliebigen Romanausschnitt.</p></div>
+    <div><h4>Blade Runner 2048: „Nowhere to Run“</h4>
+      <p>Los Angeles 2048, Protagonist Sapper Morton. Dystopische Stimmung entsteht durch Setting, Licht, Atmosphäre, Wetter. Fragen waren u. a.: Lebensumstände, Reaktionen anderer Figuren, Vergangenheit, Verfolgung, Kampf, Vergleich mit dem Huhn („even chickens know when to run“).</p></div>
+    <div><h4>Ray Kurzweil (Interview)</h4>
+      <p>Prognosen: menschliche KI-Leistung (AGI) um 2029, Singularität 2045, Verschmelzung von Mensch und Cloud. Diskutiert werden Jobverlust und Ungleichheit. Frage: Wie realistisch sind die Ideen?</p></div>
+  </div>
+
+  <h3>Was Menschen ausmacht, was AI nie hätte</h3>
+  <ul class="chips"><li>echte Emotionen, nicht nur Nachahmung</li><li>Mitgefühl und Empathie</li><li>Angst (Instinkte)</li><li>ethisches Handeln</li></ul>
+  <p><b>Welt 2048 (Klassensammlung):</b> viele Jobs durch AI ersetzt, autonomes Fahren, Klimaziele verfehlt, mehr Roboter in Haushalt und Pflege, Smartphone veraltet, Ressourcenknappheit, soziale Kluft wächst.</p>
+
+  <h3>Frühere Zukunftsbilder (1980er)</h3>
+  <div class="tw"><table>
+    <tr><th>Robert McCall: „The Prologue and the Promise“ (1983)</th><th>Judge Dredd (Comic, frühe 1980er)</th></tr>
+    <tr><td style="font-weight:400">Utopie: Zeitraffer von dunkler Vergangenheit zu heller Zukunft und Raumfahrt, Weltgemeinschaft, hoffnungsvoll, Sonne als „beacon of hope“, Pflanzen = gesunde Umwelt</td><td style="font-weight:400">Dystopie: Gewalt und Kriminalität, dunkel, komplett urbanisiert ohne Vegetation, Diktatur?, Überbevölkerung (400 Mio. in Mega-City One), Ungleichheit Staat gegen Volk, unterdrückend</td></tr>
+  </table></div>
+  <p>Diskussionsansatz „Welche Vision passt zu heute?“: Beides trifft teilweise zu. Technik und Raumfahrt (utopisch) stehen neben Überwachung, Ungleichheit und Klimakrise (dystopisch). Unterschied: Aktuelle Sorgen kreisen stärker um AI, Daten und Klima.</p>
+
+  <h3>AI-Dilemmas: Texte aus der Jigsaw-Arbeit</h3>
+  <div class="tw"><table>
+    <tr><th>Bereich</th><th>Nutzen</th><th>Ethische Probleme</th><th>Lösungsansätze</th></tr>
+    <tr><td>Healthcare</td><td>Krebs früh erkennen, Medikamentenentwicklung, effizientere Abläufe</td><td>Ersatz menschlicher Fürsorge, Fehlerhaftung, Patientendaten</td><td>Balance, klare Richtlinien, Datenschutz, gründliche Tests</td></tr>
+    <tr><td>Surveillance</td><td>Verbrechen verhindern, Vermisste finden, Sicherheit</td><td>Privatsphäre, „chilling effect“ auf Meinungsfreiheit, Missbrauch, Bias bei Gesichtserkennung</td><td>Transparenz, Aufsicht, Audits, öffentliche Debatte</td></tr>
+    <tr><td>Autonomous weapons</td><td>weniger gefährdete Soldaten, Präzision, Kosten</td><td>Verantwortung unklar, Wettrüsten, moralisch: Entscheidung über Leben an Maschinen</td><td>internationale Abkommen, menschliche Kontrolle, Verantwortungsrahmen</td></tr>
+    <tr><td>Algorithmic bias</td><td>(Ziel: faire Entscheidungen)</td><td>verzerrte Daten, „black box“, Diskriminierung bei Bewerbung und Polizei, Vertrauensverlust</td><td>vielfältige Daten, Fairness-Tests, diverse Teams, Standards</td></tr>
+  </table></div>
+  <p>Impuls aus dem Unterricht: <span class="en">“If AI is faster and more objective than humans, we should let it make the difficult decisions.”</span> Gegenargumente: Daten sind nie neutral, Verantwortung bleibt bei Menschen, Empathie und Ethik fehlen.</p>
+
+  <h3>Kriterien für „responsible progress“ (Contest-Blatt)</h3>
+  <div class="tw"><table>
+    <tr><th>Kriterium</th><th>Leitfragen</th></tr>
+    <tr><td>Purpose &amp; Impact</td><td>Löst es ein echtes Problem? Wer profitiert?</td></tr>
+    <tr><td>Safety &amp; Human Control</td><td>Sicher? Missbrauch oder Hacking möglich? Können Menschen eingreifen oder stoppen?</td></tr>
+    <tr><td>Fairness &amp; Accessibility</td><td>Zugänglich, bezahlbar? Wird jemand ausgeschlossen oder diskriminiert?</td></tr>
+    <tr><td>Privacy &amp; Data Security</td><td>Welche Daten, wie geschützt, wer hat Zugriff?</td></tr>
+    <tr><td>Transparency &amp; Accountability</td><td>Verständlich, wie es entscheidet? Wer haftet bei Fehlern?</td></tr>
+    <tr><td>Realistic &amp; Reliable</td><td>Realistisch machbar und zuverlässig?</td></tr>
+    <tr><td>Sustainability</td><td>Umweltwirkung, dauerhaft nutzbar?</td></tr>
+  </table></div>
+  <p>Diese sieben Kriterien sind ein fertiges Gerüst für jede Argumentation im Blog entry.</p>
+</section>
+
+<!-- ============ WAHLAUFGABE ============ -->
+<section id="wahl">
+  <h2>2.3 · Wahlaufgabe</h2>
+  <p class="lead">Entscheide dich in den ersten Minuten. Wähle die Aufgabe, bei der du sofort Ideen hast.</p>
+
+  <div class="cols">
+    <div>
+      <h3 style="margin-top:0">a) Blog entry</h3>
+      <ul>
+        <li><b>Titel</b>, der neugierig macht</li>
+        <li>Persönliche, direkte Sprache: <i>you, we, I</i>, rhetorische Fragen</li>
+        <li>Einstieg mit Beispiel, Frage oder Beobachtung</li>
+        <li>Klarer Standpunkt, 2–3 Argumente mit Beispielen, Gegenposition kurz aufgreifen</li>
+        <li>Schluss mit Appell oder Frage an die Leser</li>
+        <li>Kurze Absätze, Signalwörter</li>
+      </ul>
+      <p class="say">Have you ever felt that your phone knows you better than your friends do?</p>
+      <p class="say">Let’s be honest: …</p>
+      <p class="say">So, what do you think? Let me know in the comments!</p>
+    </div>
+    <div>
+      <h3 style="margin-top:0">b) Kreative Fortführung</h3>
+      <ul>
+        <li><b>Genau dort weitermachen</b>, wo der Ausschnitt endet</li>
+        <li><b>Gleiche Erzählperspektive und Zeitform</b> beibehalten</li>
+        <li>Figuren, Namen, Ort und Regeln der Welt respektieren</li>
+        <li>Atmosphäre und Techniken des Originals fortführen (Bildsprache, Satzbau, Kontraste)</li>
+        <li>Handlung ein Stück weiterführen, nicht zum Ende zusammenfassen</li>
+        <li>Zeigen statt erklären: Gedanken, Details, Dialog</li>
+        <li>Dystopie-Merkmale einbauen, offenes oder düsteres Ende passt</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Argumente für den Blog entry (Themenimpulse aus dem Unterricht)</h3>
+  <div class="tw"><table>
+    <tr><th>Thema</th><th>Pro</th><th>Contra</th></tr>
+    <tr><td>Überwachung für Sicherheit</td><td>Verbrechen verhindern, Vermisste finden, schnellere Ermittlungen</td><td>Privatsphäre, Missbrauch, Einschüchterung, Franklin-Zitat, Bias</td></tr>
+    <tr><td>AI trifft schwierige Entscheidungen</td><td>schnell, ohne Müdigkeit, große Datenmengen</td><td>verzerrte Daten, keine Empathie, wer haftet?, „black box“</td></tr>
+    <tr><td>AI ersetzt Jobs</td><td>Effizienz, gefährliche Arbeit entfällt, neue Berufe</td><td>Arbeitsplatzverlust, wachsende Ungleichheit, Abhängigkeit</td></tr>
+    <tr><td>Smart devices im Alltag</td><td>Komfort, Barrierefreiheit, Gesundheit</td><td>Mikrofone, Datensammlung, Kontrollverlust</td></tr>
+    <tr><td>Technologischer Fortschritt allgemein</td><td>Heilung von Krankheiten, Klimalösungen, Teilhabe</td><td>Digital divide, Waffen, Umweltkosten, ethische Fragen</td></tr>
+  </table></div>
+
+  <h3>Argumentationsbausteine</h3>
+  <ul class="chips">
+    <li>To begin with, …</li><li>What is more, …</li><li>Admittedly, … Nevertheless, …</li><li>Critics argue that … However, …</li>
+    <li>This shows that …</li><li>A good example is …</li><li>In the long run, …</li><li>All in all, …</li><li>I am convinced that …</li>
+  </ul>
+</section>
+
+<!-- ============ VOKABELN ============ -->
+<section id="vocab">
+  <h2>Vokabeln</h2>
+  <p class="lead">Aus deinem Topic-Vocabulary-Blatt, ergänzt um Wörter für Analyse und Dystopie.</p>
+
+  <h3>Technology &amp; society</h3>
+  <div class="tw"><table>
+    <tr><th>English</th><th>Deutsch</th><th>English</th><th>Deutsch</th></tr>
+    <tr><td>technological advancement</td><td>technologischer Fortschritt</td><td>digital divide</td><td>digitale Kluft</td></tr>
+    <tr><td>innovation</td><td>Innovation</td><td>data privacy</td><td>Datenschutz</td></tr>
+    <tr><td>artificial intelligence</td><td>künstliche Intelligenz</td><td>surveillance</td><td>Überwachung</td></tr>
+    <tr><td>robotics</td><td>Robotik</td><td>cybersecurity</td><td>Cybersicherheit</td></tr>
+    <tr><td>virtual reality (VR)</td><td>virtuelle Realität</td><td>social media</td><td>soziale Medien</td></tr>
+    <tr><td>to revolutionise</td><td>revolutionieren</td><td>to regulate</td><td>regulieren</td></tr>
+    <tr><td>to enhance</td><td>verbessern, steigern</td><td>to safeguard</td><td>schützen</td></tr>
+    <tr><td>bioethics</td><td>Bioethik</td><td>genetic engineering</td><td>Gentechnik</td></tr>
+    <tr><td>CRISPR</td><td>CRISPR</td><td>ethical implications</td><td>ethische Auswirkungen</td></tr>
+    <tr><td>weaponisation</td><td>Militarisierung</td><td>to confront</td><td>sich auseinandersetzen mit</td></tr>
+    <tr><td>to mitigate</td><td>abmildern</td><td>to address</td><td>ansprechen, angehen</td></tr>
+    <tr><td>to facilitate</td><td>erleichtern</td><td>to foster</td><td>fördern</td></tr>
+    <tr><td>to optimise</td><td>optimieren</td><td>to transform</td><td>verändern, umgestalten</td></tr>
+  </table></div>
+
+  <h4>Phrasen</h4>
+  <ul class="chips">
+    <li>raises ethical questions about … (wirft ethische Fragen auf)</li>
+    <li>has the potential to … (hat das Potenzial)</li>
+    <li>plays a crucial role in … (spielt eine entscheidende Rolle)</li>
+    <li>contributes to … (trägt bei zu)</li>
+    <li>poses a threat to … (stellt eine Gefahr dar für)</li>
+  </ul>
+
+  <h3>Dystopie und Atmosphäre</h3>
+  <div class="tw"><table>
+    <tr><th>English</th><th>Deutsch</th><th>English</th><th>Deutsch</th></tr>
+    <tr><td>oppressive</td><td>unterdrückend, bedrückend</td><td>bleak</td><td>trostlos</td></tr>
+    <tr><td>totalitarian regime</td><td>totalitäres Regime</td><td>desolate</td><td>öde, verlassen</td></tr>
+    <tr><td>propaganda</td><td>Propaganda</td><td>gloomy</td><td>düster</td></tr>
+    <tr><td>censorship</td><td>Zensur</td><td>ominous</td><td>bedrohlich</td></tr>
+    <tr><td>conformity</td><td>Anpassung</td><td>eerie</td><td>unheimlich</td></tr>
+    <tr><td>dissent / to rebel</td><td>Widerspruch / rebellieren</td><td>dread</td><td>Furcht, Grauen</td></tr>
+    <tr><td>to suppress</td><td>unterdrücken</td><td>powerless</td><td>machtlos</td></tr>
+    <tr><td>to monitor</td><td>überwachen</td><td>isolated</td><td>isoliert</td></tr>
+    <tr><td>to manipulate</td><td>manipulieren</td><td>to defy</td><td>trotzen, sich widersetzen</td></tr>
+    <tr><td>loss of individuality</td><td>Verlust der Individualität</td><td>to dehumanise</td><td>entmenschlichen</td></tr>
+  </table></div>
+
+  <h3>Analyse-Verben</h3>
+  <ul class="chips">
+    <li>depicts / portrays</li><li>illustrates</li><li>conveys</li><li>evokes</li><li>emphasises / underlines</li>
+    <li>suggests / implies</li><li>reveals</li><li>hints at</li><li>foreshadows</li><li>contrasts / juxtaposes</li><li>reflects</li>
+  </ul>
+</section>
+
+<!-- ============ CHECKLISTE & PLAN ============ -->
+<section id="check">
+  <h2>Checkliste und Plan für die zwei Tage</h2>
+
+  <h3>Während der Klausur</h3>
+  <ol>
+    <li>Alle Aufgaben lesen, <b>Wahlaufgabe sofort entscheiden</b>.</li>
+    <li>Text <b>einmal gründlich</b> lesen: Perspektive, Setting, Figuren, Stimmung, Genremerkmale mit Stift markieren (ein Farbcode für Charakter, einer für Atmosphäre).</li>
+    <li>Für Analysis eine Mini-Gliederung (5 Minuten) schreiben, dann erst formulieren.</li>
+    <li>Pro Aufgabe die Uhr im Blick behalten, nicht zu lange an einer hängen bleiben.</li>
+    <li>Zum Schluss: Zeitformen, Rechtschreibung, Wortzahl, Zeilenangaben prüfen.</li>
+  </ol>
+
+  <div class="box warn"><p class="t">Fehler, die du gezielt kontrollierst</p>
+    <ul>
+      <li>Zeitform (Summary und Analysis im Präsens)</li>
+      <li>Subject-verb agreement (<i>he says</i>, <i>the society controls</i>)</li>
+      <li>Verwechslungen: <i>affect/effect</i>, <i>its/it’s</i>, <i>lose/loose</i>, <i>their/there</i></li>
+      <li>Falsche Freunde: <i>actual</i> ≠ aktuell, <i>become</i> ≠ bekommen</li>
+      <li>Einheitlich britisches <b>oder</b> amerikanisches Englisch</li>
+    </ul>
+  </div>
+  <p>Prüfe außerdem, welche Hilfsmittel (z. B. Wörterbuch) bei dir zugelassen sind und wie die Gewichtung der Teile ist, das kann deine Lehrkraft sagen.</p>
+
+  <h3>Vorschlag: Heute und morgen</h3>
+  <div class="tw"><table>
+    <tr><th>Wann</th><th>Was</th></tr>
+    <tr><td>Tag 1 vormittags</td><td>Diesen Zettel durchgehen: Aufgabenarten, Analysetabelle, Genremerkmale. Dann <b>Analyse üben</b>: nimm den 1984-Auszug (Kapitel 1) und schreibe 2 PEEL-Absätze, einen zu Charakterisierung, einen zu Atmosphäre (je ca. 15 min).</td></tr>
+    <tr><td>Tag 1 nachmittags</td><td>Summary zum gleichen Text mit einem Teilaspekt (z. B. nur „Rules and control in Oceania“), 20 Minuten. Danach Blog entry zu Franklin-Zitat oder Überwachung, 40 Minuten.</td></tr>
+    <tr><td>Tag 1 abends</td><td>30 min Vokabeln (Technik-Tabelle und Dystopie-Wörter), dann Schluss.</td></tr>
+    <tr><td>Tag 2 vormittags</td><td><b>Mediation üben</b> (E-Mail an Sam, 40 min). Kreative Fortführung einer kurzen Textstelle, 30 min. Beides mit Uhr.</td></tr>
+    <tr><td>Tag 2 nachmittags</td><td>Eigene Fehler durchsehen (Zeitformen, fehlende Wirkung bei Analysen). Nur noch Wiederholung, kein neuer Stoff.</td></tr>
+    <tr><td>Tag 2 abends</td><td>Dieses Blatt einmal überfliegen, Material packen, früh schlafen.</td></tr>
+  </table></div>
+</section>
+
+<!-- ============ SELBSTTEST ============ -->
+<section id="test">
+  <h2>Selbsttest</h2>
+  <p class="lead">Beantworte laut oder schriftlich, dann klappe die Antwort auf.</p>
+  <details><summary>1. Nenne vier genretypische Merkmale einer Dystopie.</summary>
+    <p>z. B. Überwachung, Propaganda und Zensur, Verlust von Freiheit und Individualität, soziale Ungleichheit, zerstörte oder düstere Umwelt, rebellierender Protagonist, Warnfunktion.</p></details>
+  <details><summary>2. Was ist der Unterschied zwischen Summary und Analysis?</summary>
+    <p>Summary gibt Inhalt neutral in eigenen Worten wieder (hier nur zu einem Teilaspekt). Analysis erklärt, wie der Text durch Gestaltungsmittel wirkt, mit Beleg und Wirkung.</p></details>
+  <details><summary>3. Wie ist ein PEEL-Absatz aufgebaut?</summary>
+    <p>Point, Evidence (Zitat mit Zeilenangabe), Explanation, Link/Effect (Wirkung und Genrebezug).</p></details>
+  <details><summary>4. Welche Wirkung kann ein kurzer Satz haben?</summary>
+    <p>Spannung, Härte, Dringlichkeit, Gefühl von Kälte oder Kontrolle; er unterstreicht abrupt eine Aussage.</p></details>
+  <details><summary>5. Nenne zwei indirekte Charakterisierungsmittel mit Beispiel.</summary>
+    <p>Verhalten (er schleicht die Treppe hinauf: Angst), Umgebung (karge Wohnung: Armut und Kontrolle), Reaktion anderer, Aussehen, Gedanken.</p></details>
+  <details><summary>6. Welche Fehler vermeidest du in der Mediation?</summary>
+    <p>Wörtliches Übersetzen, Unwichtiges, falscher Ton für den Adressaten, fehlende Erklärung kultureller Begriffe, Meinung vermischt mit Infos.</p></details>
+  <details><summary>7. Wie baust du eine kreative Fortführung auf?</summary>
+    <p>Ansatz direkt am Textende, gleiche Perspektive und Zeit, gleiche Stimmung und Techniken, ein Handlungsschritt, offene oder düstere Wendung.</p></details>
+  <details><summary>8. Nenne drei Kriterien für „responsible progress“.</summary>
+    <p>Purpose &amp; Impact, Safety &amp; Human Control, Fairness &amp; Accessibility, Privacy &amp; Data Security, Transparency &amp; Accountability, Realistic &amp; Reliable, Sustainability.</p></details>
+</section>
+
+<footer>Erstellt aus deinem Unterrichtsordner „Q2.1 The world of tomorrow“ und der Klausurstruktur. Die Inhalte der verlinkten PDFs (z. B. Echo-Boy-Auszug, Arbeitsblätter) waren nur teilweise lesbar, ergänze dein eigenes Material.</footer>
+</div>
+
+<script>
+window.addEventListener('beforeprint', function () {
+  document.querySelectorAll('details').forEach(function (d) { d.setAttribute('open', ''); });
+});
+</script>
+</body>
+</html>
